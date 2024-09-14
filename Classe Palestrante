@@ -1,0 +1,25 @@
+public class Palestrante extends Participante {
+    private String especialidade;
+
+    public Palestrante(String nome, String email, String especialidade) {
+        super(nome, email);
+        this.especialidade = especialidade;
+    }
+
+    public String getEspecialidade() {
+        return especialidade;
+    }
+
+    public void setEspecialidade(String especialidade) {
+        this.especialidade = especialidade;
+    }
+
+    @Override
+    public String toString() {
+        return "Palestrante{" +
+                "nome='" + getNome() + '\'' +
+                ", email='" + getEmail() + '\'' +
+                ", especialidade='" + especialidade + '\'' +
+                '}';
+    }
+}
