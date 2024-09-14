@@ -1,0 +1,47 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Sessao {
+    private String titulo;
+    private List<Palestrante> palestrantes;
+    private List<Inscricao> inscricoes;
+
+    public Sessao(String titulo) {
+        this.titulo = titulo;
+        this.palestrantes = new ArrayList<>();
+        this.inscricoes = new ArrayList<>();
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public List<Palestrante> getPalestrantes() {
+        return palestrantes;
+    }
+
+    public void adicionarPalestrante(Palestrante palestrante) {
+        palestrantes.add(palestrante);
+    }
+
+    public List<Inscricao> getInscricoes() {
+        return inscricoes;
+    }
+
+    public void adicionarInscricao(Inscricao inscricao) {
+        inscricoes.add(inscricao);
+    }
+
+    @Override
+    public String toString() {
+        return "Sessao{" +
+                "titulo='" + titulo + '\'' +
+                ", palestrantes=" + palestrantes +
+                ", inscricoes=" + inscricoes +
+                '}';
+    }
+}
