@@ -1,0 +1,46 @@
+import java.util.Date;
+
+public class Inscricao {
+    private Participante participante;
+    private Sessao sessao;
+    private Date dataInscricao;
+
+    public Inscricao(Participante participante, Sessao sessao, Date dataInscricao) {
+        this.participante = participante;
+        this.sessao = sessao;
+        this.dataInscricao = dataInscricao;
+    }
+
+    public Participante getParticipante() {
+        return participante;
+    }
+
+    public void setParticipante(Participante participante) {
+        this.participante = participante;
+    }
+
+    public Sessao getSessao() {
+        return sessao;
+    }
+
+    public void setSessao(Sessao sessao) {
+        this.sessao = sessao;
+    }
+
+    public Date getDataInscricao() {
+        return dataInscricao;
+    }
+
+    public void setDataInscricao(Date dataInscricao) {
+        this.dataInscricao = dataInscricao;
+    }
+
+    @Override
+    public String toString() {
+        return "Inscricao{" +
+                "participante=" + participante +
+                ", sessao=" + sessao +
+                ", dataInscricao=" + dataInscricao +
+                '}';
+    }
+}
